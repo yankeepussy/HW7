@@ -3,42 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.phone{
-    width: 300px;
-    height: 520px;
-    background-color: black;
-    border-radius: 30px;
-    position: relative;
+.phone {
+  width: 300px;
+  height: 520px;
+  background-color: black;
+  border-radius: 30px;
+  position: relative;
 }
-.screen{
-    width: 280px;
-    height: 400px;
-    background-color: gray;
-    position: absolute;
-    top: 40px;
-    left: 10px;
+.screen {
+  width: 280px;
+  height: 400px;
+  background-color: gray;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  overflow: hidden;
 }
-.click{
-    width: 50px;
-    height: 50px;
-    border: 3px solid rgb(26, 26, 26);
-    position: absolute;
-    bottom: 15px;
-    left: 127px;
-    border-radius: 50%;
+.click {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(26, 26, 26);
+  position: absolute;
+  bottom: 15px;
+  left: 127px;
+  border-radius: 50%;
 }
-.top{
-    width: 70px;
-    height: 8px;
-    position: absolute;
-    top: 12px;
-    left: 115px;
-    background-color: rgb(78, 78, 78);
-    border-radius: 4px;
+.top {
+  width: 70px;
+  height: 8px;
+  position: absolute;
+  top: 12px;
+  left: 115px;
+  background-color: rgb(78, 78, 78);
+  border-radius: 4px;
+}
+.unlock {
+  width: 280px;
+  height: 400px;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  transition: 0.2s;
+
+}
+.screen:hover .unlock {
+  left: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
